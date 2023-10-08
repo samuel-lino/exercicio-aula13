@@ -32,7 +32,8 @@
 .content{
   border: #282c34 solid;
   margin: 0.4vw;
-  padding: 0.2vw;
+  padding: 0.1vw;
+  width: 28vw;
 }
 .prime{
   color: #fff;
@@ -48,4 +49,22 @@
 .imagem{
   width: 20vw;
   min-height: 19vw;
+}
+.sobre{
+  width: 70vw;
+  border: #282c34 solid;
+  display: flex;
+  flex-direction: column;
+}
+.titulo{
+  font-size: 1.2vw;
+  color: #0f0;
+}
+.link{
+  font-size: 1.9vw;
+  color: #fff;
+  &:hover{
+    color: #0f0;
+  }
+  margin-bottom: 1vw;
 }

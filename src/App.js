@@ -1,7 +1,7 @@
 import './App.css';
-import { Titulo} from './componentes/styled/styled';
+import { Titulo, Subtitulo} from './componentes/styled/styled';
 import Navegar from './componentes/Navegar';
-import { habilidade} from './componentes/conteudo';
+import { habilidade, sobre, projetos, contato} from './componentes/conteudo';
 
 function add(cont){
   const content = document.querySelector('.conteudo')
@@ -13,7 +13,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Titulo>Samuel Eduardo Lino Gomes</Titulo>
-        <Navegar onClickh={function(){add(habilidade);console.log('clicouu')}}/>
+        <Subtitulo>Dev em treinamento</Subtitulo>
+        <Navegar onClickh={function(){add(habilidade)}} onClicks={function(){add(sobre)}} onClickp={function(){add(projetos)}} onClickc={function(){add(contato)}} />
       </header>
       <div className='conteudo'>
 
